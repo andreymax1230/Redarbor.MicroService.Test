@@ -16,3 +16,6 @@ Para ejecutar el proyecto es necesario ejecutar las imagenes de docker (docker-c
 Se utiliza una consola de powershell para ejecutar el docker compose, ejemplo
 * cd C:\Users\USER\source\repos\Redarbor.MicroService.Test\Redarbor.Presentation.Api
 * docker-compose up -d
+
+Es ncesario que todos los servicios estén en ejecucion para ejecutar el proyecto
+![image](https://github.com/user-attachments/assets/77b41885-379b-42a3-8cd6-68dd8cc09442)
