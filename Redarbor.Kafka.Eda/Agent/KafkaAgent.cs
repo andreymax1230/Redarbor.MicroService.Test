@@ -80,7 +80,6 @@ public class KafkaAgent : IKafkaAgent
                         var instance = scope.ServiceProvider.GetService(itemEvent) as IKafkaEvent;
                         ArgumentNullException.ThrowIfNull(instance);
                         instance.Handler(new KafkaMessage(consumeResult), cancellationToken);
-                        // _consumer.StoreOffset(consumeResult);
                         _consumer.Commit();
                     }
                 }
