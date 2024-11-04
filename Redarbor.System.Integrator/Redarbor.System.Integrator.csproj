@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Redarbor.Events\Redarbor.Events.csproj" />
+    <ProjectReference Include="..\Redarbor.Kafka.Eda\Redarbor.Kafka.Eda.csproj" />
+    <ProjectReference Include="..\Redarbor.System.Application\Redarbor.System.Application.csproj" />
+    <ProjectReference Include="..\Redarbor.System.Domain\Redarbor.System.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

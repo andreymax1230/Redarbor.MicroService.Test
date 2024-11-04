@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MongoDB.Driver" Version="3.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Redarbor.Domain.Eda\Redarbor.Domain.Eda.csproj" />
+    <ProjectReference Include="..\Redarbor.Events\Redarbor.Events.csproj" />
+    <ProjectReference Include="..\Redarbor.Kafka.Eda\Redarbor.Kafka.Eda.csproj" />
+  </ItemGroup>
+
+</Project>
